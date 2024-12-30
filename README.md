@@ -133,4 +133,4 @@ function setTheme(theme) {
 ## Acknowledgments
 
 - Challenge by [Frontend Mentor](https://www.frontendmentor.io)
-- Coded with ❤️
+- Coded with ❤ ️ by [Samuel Smith](https://github.com/samuelsmith442)
