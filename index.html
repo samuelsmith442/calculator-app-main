@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Calculator app</title>
+</head>
+<body>
+  <main class="calculator">
+    <header class="header">
+      <h1>calc</h1>
+      <nav class="theme-switcher" role="navigation" aria-label="Theme Selection">
+        <span>THEME</span>
+        <div class="toggle">
+          <div class="toggle-labels" aria-hidden="true">
+            <span>1</span>
+            <span>2</span>
+            <span>3</span>
+          </div>
+          <div class="toggle-track" role="radiogroup" aria-label="Theme toggle">
+            <div class="toggle-thumb" role="radio" aria-checked="true" aria-label="Theme 1"></div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section class="calculator-body">
+      <output class="display" aria-live="polite" role="status">399,981</output>
+
+      <section class="keypad" role="group" aria-label="Calculator keypad">
+        <button type="button" class="number" data-value="7">7</button>
+        <button type="button" class="number" data-value="8">8</button>
+        <button type="button" class="number" data-value="9">9</button>
+        <button type="button" class="operator" data-action="delete" aria-label="Delete last digit">DEL</button>
+        
+        <button type="button" class="number" data-value="4">4</button>
+        <button type="button" class="number" data-value="5">5</button>
+        <button type="button" class="number" data-value="6">6</button>
+        <button type="button" class="operator" data-action="add" aria-label="Add">+</button>
+        
+        <button type="button" class="number" data-value="1">1</button>
+        <button type="button" class="number" data-value="2">2</button>
+        <button type="button" class="number" data-value="3">3</button>
+        <button type="button" class="operator" data-action="subtract" aria-label="Subtract">-</button>
+        
+        <button type="button" class="number" data-value=".">.</button>
+        <button type="button" class="number" data-value="0">0</button>
+        <button type="button" class="operator" data-action="divide" aria-label="Divide">/</button>
+        <button type="button" class="operator" data-action="multiply" aria-label="Multiply">×</button>
+        
+        <button type="button" class="reset" data-action="reset" aria-label="Reset calculator">RESET</button>
+        <button type="button" class="equals" data-action="calculate" aria-label="Calculate result">=</button>
+      </section>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
